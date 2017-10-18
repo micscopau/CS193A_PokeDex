@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="paulygon.pokedex.DetailsActivity">
+
+
+ <fragment
+     android:id="@+id/frag_details"
+     android:name="paulygon.pokedex.DetailsFragment"
+     tools:layout = "@layout/fragment_details"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="paulygon.pokedex.PokedexActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PokeDex!"
+        android:textSize="36dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click a Pokemon to learn more!"/>
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <TableRow android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/android_is_kind_of_dumb"
+                android:layout_weight="1"
+                android:src="@drawable/charmander"
+                android:tag="Charmander"
+                android:scaleType="fitCenter"
+                android:onClick="pokemonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:src="@drawable/bulbasaur"
+                android:tag="Bulbasaur"
+                android:scaleType="fitCenter"
+                android:onClick="pokemonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <ImageButton
+                android:layout_weight="1"
+                android:src="@drawable/zubat"
+                android:tag="Zubat"
+                android:scaleType="fitCenter"
+                android:onClick="pokemonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:src="@drawable/jigglypuff"
+                android:tag="Jigglypuff"
+                android:scaleType="fitCenter"
+                android:onClick="pokemonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+
